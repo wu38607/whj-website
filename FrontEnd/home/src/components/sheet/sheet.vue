@@ -13,7 +13,7 @@
         <i class="icon-eye"></i>
         <span class="pv">{{blog.pv}}</span>
        </span>
-       <time class="time">最后修改日期：{{`${blog.time.year}年${blog.time.month}月${blog.time.day}日`}}</time>
+       <time class="time">{{`${blog.time.year}年${blog.time.month}月${blog.time.day}日`}}</time>
     </div>
   </section>
 </template>
@@ -82,14 +82,12 @@
       .pv-wrapper
         color #949494
         position relative
-        margin-left 20px
-        .icon-eye
-          position absolute
-          top 1px
-        .pv
-          position absolute
-          left 18px
-          top 1px
+        margin-left 5px
+        .icon-eye,.pv
+          position static
+          font-size 15px
+          line-height 15px
+          vertical-align baseline
       .time
         float right
         line-height 30px

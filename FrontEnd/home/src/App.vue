@@ -2,9 +2,9 @@
   <div @click="hideMenu">
     <my-header class="my-head"></my-header>
     <my-menu style="top:-340px" class="menu-container"></my-menu>
-     <transition name="faden"> 
+    <transition name="faden">
       <router-view class="view"></router-view>
-     </transition> 
+    </transition>
     <my-up class="up-wrapper"></my-up>
   </div>
 </template>
@@ -55,7 +55,7 @@ export default {
       position fixed
       z-index 50
     .view
-      margin 75px auto 0
+      margin 70px auto 0
     .up-wrapper
       position fixed
       bottom 60px
