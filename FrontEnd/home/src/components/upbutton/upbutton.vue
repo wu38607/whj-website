@@ -1,6 +1,8 @@
 <template>
   <transition name="slide">
-    <i @click="goTop" v-show="isShow" class="icon-up"></i>
+    <div @click="goTop" v-show="isShow" class="up-wrapper">
+      <i  class="icon-up"></i>
+    </div>
   </transition>
 </template>
 
@@ -62,21 +64,22 @@ export default {
   .slide-leave-active
     transition all .5s
     transform translateX(80px)
-
-  .icon-up
-    font-size 35px
-    width 40px
-    height 40px
-    border-radius 50%
-    box-shadow 0 1px 3px 1px rgba(0,0,0,0.16)
-    background #00cfe1
-    text-align center
-    line-height 35px
-    &:before
-      color #fff
-    &:hover,&:active
-      cursor pointer
-      box-shadow 0 1px 3px 3px rgba(0,0,0,0.16)
-    &:active
-      transform translateY(2px)
+  .up-wrapper
+    box-sizing border-box
+    padding 15px
+    .icon-up
+      font-size 30px
+      padding 5px
+      border-radius 50%
+      box-shadow 0 1px 3px 1px rgba(0,0,0,0.16)
+      background #00cfe1
+      text-align center
+      line-height 25px
+      &:before
+        color #fff
+      &:hover,&:active
+        cursor pointer
+        box-shadow 0 1px 3px 3px rgba(0,0,0,0.16)
+      &:active
+        transform translateY(2px)
 </style>

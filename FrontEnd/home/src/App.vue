@@ -58,6 +58,6 @@ export default {
       margin 75px auto 0
     .up-wrapper
       position fixed
-      bottom 80px
-      right 30px
+      bottom 60px
+      right 10px
 </style>
