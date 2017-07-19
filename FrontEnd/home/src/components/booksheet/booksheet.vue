@@ -92,12 +92,9 @@ export default {
         time
           margin-right 10px
         .see
-          vertical-align bottom
           .icon-eye
-            position absolute
-            top 1px
-            left 165px
-          .seenum
-            position absolute
-            left 185px
+            position static
+            font-size 16px
+            line-height 16px
+            vertical-align baseline
 </style>
