@@ -1,0 +1,23 @@
+{
+  "errno": 0,
+  "data": [
+    {
+      "_id": 0,
+      "img": "",
+      "title": "幻灯片一",
+      "url": "http://www.wuhongjiang.com"      
+    },
+    {
+      "_id": 1,
+      "img": "",
+      "title": "幻灯片二",
+      "url": "http://www.wuhongjiang.com"      
+    },
+    {
+      "_id": 3,
+      "img": "",
+      "title": "幻灯片三",
+      "url": "http://www.wuhongjiang.com"      
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+ul
+  list-style none
+h3, ul
+  margin 0
+  padding 0
+.my-li-tools
+  padding-right: 5px
+
+.tool
+  font-size 12px
+  &:hover
+    cursor pointer
+    text-decoration-line underline
+    
+.delete
+  color #ff4646
+.edit
+  color #22b6c3
+
+.ellipsis
+    text-overflow ellipsis
+    overflow hidden
+    white-space nowrap
+
+.title
+  padding 0px 5px 10px
+  font-size 25px
+  font-weight normal
+  font-family Arial, Helvetica, sans-serif
+
+.newcata
+  width 100%
+  height 30px 
+  border-top 1px solid rgba(117,117,117,0.3)
+  text-align center
+  font-size 18px
+  color #2d2929
+  background #dedede
+  user-select none
+  border-radius 0 0 5px 5px
+  &:hover,&:active
+    cursor pointer
+  &:active
+    transform scale(0.99)
+    
+.my-ul
+  overflow-y scroll
+  height 285px
+  .my-li
+    border-bottom 1px solid rgba(117,117,117,0.3)
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    .my-li-title
+      color #2d2929
+      padding-left 5px
+      font-size 18px
+      font-weight 400
+      line-height 40px
+      &:hover
+        cursor pointer
+        text-decoration-line underline
+    .my-li-tools
+      line-height 40px
