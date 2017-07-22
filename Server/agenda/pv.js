@@ -8,7 +8,7 @@ function pv(agenda) {
   });
 
   agenda.on('ready', function () {
-    agenda.create('update pv').schedule('9am 11minute').repeatEvery('1 days').save();
+    agenda.create('update pv').schedule('0am').repeatEvery('1 days').save();
     agenda.start();
   });
 }
