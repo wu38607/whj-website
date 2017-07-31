@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Whj's Website</title>
+</head>
+
+<body>
+  <ul>
+    <% blogDocs.forEach(function(blog){ %>
+      <li>
+        <h3>
+          <%= blog.title%>
+        </h3>
+        <div>
+          <p>
+             <%= blog.guide%>
+          </p>
+        </div>
+        <span>
+          <%= blog.category  %>
+        </span>
+      </li>
+      <%});%>
+  </ul>
+</body>
+
+</html>

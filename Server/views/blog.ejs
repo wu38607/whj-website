@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Whj's Website</title>
+</head>
+
+<body>
+  <h1>
+    <%= blogDoc.title%>
+  </h1>
+  <article>
+    <%= blogDoc.article %>
+  </article>
+  <span><%= blogDoc.category %></span>
+  <time>
+    <%= blogDoc.time.year %>年
+      <%= blogDoc.time.month %>月
+        <%= blogDoc.time.day %>日
+  </time>
+</body>
+
+</html>

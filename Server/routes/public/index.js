@@ -7,6 +7,7 @@ const bookDB = require('../../model/book');
 const status = require('../../util/res');
 let filterIPs = require('../../config').filterIP;
 let isFilter = require('../../middlewares/isFilter');
+
 router.post('/sheet.json', function (req, res) {
   let start = req.body.start;
   let length = req.body.length;
@@ -16,7 +17,7 @@ router.post('/sheet.json', function (req, res) {
       blogs.push(_copyBlogFromDoc(blogDocs[i]));
     }
     res.json({ errno: 0, blogs });
-  })
+  });
 });
 
 router.get('/pagecount.json', function (req, res) {

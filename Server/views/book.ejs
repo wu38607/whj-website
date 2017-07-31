@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Whj's Website</title>
+</head>
+
+<body>
+  <ul>
+    <% bookDocs.forEach(function(book){ %>
+      <li>
+        <section>
+          <h1>
+            <%= book.title%>
+          </h1>
+          <p>
+            <%= book.guide%>
+          </p>
+          <time>
+            Last updated
+            <%= book.time.year %>年
+              <%= book.time.month %>月
+                <%= book.time.day %>日
+          </time>
+        </section>
+      </li>
+      <%}); %>
+  </ul>
+</body>
+
+</html>

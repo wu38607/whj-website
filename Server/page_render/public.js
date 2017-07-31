@@ -1,10 +1,12 @@
 let path = require('path');
 let blogDB = require('../model/blog');
+let seo = require('../middlewares/seo');
+
 function renderPublic(app) {
   let pv = require('../middlewares/pv');
   app.get('/', function (req, res) { res.redirect('home'); });
 
-  app.get('/home', pv.visite.bind(pv), function (req, res) {
+  app.get('/home', seo, pv.visite.bind(pv), function (req, res) {
     res.sendFile(path.join(__dirname, '../public/home/index.html'));
   });
 
@@ -12,11 +14,11 @@ function renderPublic(app) {
     res.sendFile(path.join(__dirname, '../public/home/index.html'));
   });
 
-  app.get('/catalog/book', pv.visite.bind(pv), function (req, res, next) {
+  app.get('/catalog/book', seo, pv.visite.bind(pv), function (req, res, next) {
     res.sendFile(path.join(__dirname, '../public/home/index.html'));
   });
 
-  app.get('/blog/:id', pv.visite.bind(pv), function (req, res, next) {
+  app.get('/blog/:id', seo, pv.visite.bind(pv), function (req, res, next) {
     res.sendFile(path.join(__dirname, '../public/home/index.html'));
   });
 }
