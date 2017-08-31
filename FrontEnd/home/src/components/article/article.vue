@@ -76,13 +76,16 @@ export default {
         top 5px
   blockquote
     position relative
-    padding 10px 20px
+    padding 15px 20px
     border-left 4px solid #00cfe1
     color #6e6e6e
     background #f5f5f5
     font-size 14px
     border-radius 0 2px 2px 0
     margin-left 0
+    p
+      font-size 16px
+      margin 0
   .article-container
     box-sizing border-box
     position relative
