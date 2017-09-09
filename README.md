@@ -2,7 +2,7 @@
 
 [个人网站](http://www.wuhongjiang.com/home)　
 
-[建站教程](http://www.wuhongjiang.com/book/build_a_website_guide/)
+~~[建站教程](http://www.wuhongjiang.com/book/build_a_website_guide/)~~
 
 ## 技术栈:
 
