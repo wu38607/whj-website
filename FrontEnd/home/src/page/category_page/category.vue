@@ -86,7 +86,7 @@ export default {
     this.$http.get('/api/public/categories.json').then((response) => {
       response = response.body;
       if (response.errno === this.ERR_OK) {
-        this.list = response.data;
+        this.list = response.data.reverse();
         let name = this.$route.params.name;
         if (name === 'none') {
           name = this.list[0];
