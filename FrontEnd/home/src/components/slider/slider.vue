@@ -110,7 +110,7 @@
       padding: 0
       font-size 25px
       font-weight lighter
-      color #fff
+      color #000
     .slide-page
       position absolute
       bottom 20px
