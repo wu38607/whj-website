@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
   <link rel="shoticon" href="./static/img/favicon.ico" type="image/x-icon">
   <title>Whj's Website</title>
+  <link rel="manifest" href="/manifest.json"> 
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Whj's Website">
+  <link rel="apple-touch-icon" href="/static/img/icon-128x128.png">
+
+  <meta name="msapplication-TileImage" content="/static/img/icon-128x128.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
 </head>
 
 <body>
@@ -24,6 +33,15 @@
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(bp, s);
     })();
+  </script>
+  <script>
+    window.onload = () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('./service-worker.js')
+          .then(function () { console.log('Service Worker Registered'); });
+      }
+    };
   </script>
 </body>
 

@@ -89,6 +89,14 @@ var webpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
+      },
+      {
+        from: path.resolve(__dirname, '../src/manifest.json'),
+        to: config.build.assetsRoot
+      },
+      {
+        from: path.resolve(__dirname, '../src/service-worker.js'),
+        to: config.build.assetsRoot
       }
     ])
   ]
