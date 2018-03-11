@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel=shoticon href=./static/img/favicon.ico type=image/x-icon><title>Whj's Website</title><link href=/static/css/app.9c2186ba619f9d49103c32e582b79d39.css rel=stylesheet></head><body><div id=app></div><script src=/static/highligh/highlight.pack.js></script><script>(function () {
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><link rel=shoticon href=./static/img/favicon.ico type=image/x-icon><title>Whj's Website</title><link rel=manifest href=/manifest.json><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=apple-mobile-web-app-title content="Whj's Website"><link rel=apple-touch-icon href=/static/img/icon-128x128.png><meta name=msapplication-TileImage content=/static/img/icon-128x128.png><meta name=msapplication-TileColor content=#2F3BA2><link href=/static/css/app.d12c653ea69ac20bf5304867921bdebd.css rel=stylesheet></head><body><div id=app></div><script src=/static/highligh/highlight.pack.js></script><script>(function () {
       var bp = document.createElement('script');
       var curProtocol = window.location.protocol.split(':')[0];
       if (curProtocol === 'https') {
@@ -9,4 +9,10 @@
       }
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(bp, s);
-    })();</script><script type=text/javascript src=/static/js/manifest.139d70cf02fdba204f1c.js></script><script type=text/javascript src=/static/js/vendor.44b5c1c7f56ef1db28ad.js></script><script type=text/javascript src=/static/js/app.2d69839e3cc55b5cda29.js></script></body></html>
+    })();</script><script>window.onload = () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('./service-worker.js')
+          .then(function () { console.log('Service Worker Registered'); });
+      }
+    };</script><script type=text/javascript src=/static/js/manifest.edbf24ae6fa11bd1fc98.js></script><script type=text/javascript src=/static/js/vendor.5dfee583f4f75cff989c.js></script><script type=text/javascript src=/static/js/app.0430c91ac20a6ddb6477.js></script></body></html>
