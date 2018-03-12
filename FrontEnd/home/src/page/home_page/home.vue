@@ -37,7 +37,10 @@ export default {
   },
   methods: {
     goUrl(index) {
-      window.open(this.sliders[index].url);
+      console.log(this.sliders[index].url);
+      let url = this.sliders[index].url.replace(/https:\/\/www.wuhongjiang.com|http:\/\/www.wuhongjiang.com/, '');
+      console.log(url);
+      this.$router.push(url);
     },
     goPage(page) {
       let start = page * 10;
